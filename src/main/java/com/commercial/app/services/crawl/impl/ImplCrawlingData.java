@@ -47,6 +47,7 @@ public class ImplCrawlingData implements CrawlingData {
             return "Done!";
         } catch (Exception e){
             System.out.println("Error: " + e.getMessage());
+
         }
         return "OK";
     }
