@@ -56,5 +56,5 @@ public class ImplBrandService implements BrandService {
 
         return resultList;
     }
-    
+
 }
