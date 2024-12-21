@@ -117,7 +117,7 @@ public class ImplInstallmentService implements InstallmentService {
             // Calculate totalPayment after downPayment
             int totalPayment = laptopPrice + (int) totalInterest + 80000;
 
-            int monthlyInstallment = totalPayment / months;
+            int monthlyInstallment =(remainingLoanAmount + (int) totalInterest + 80000) / months;
             Locale localeVN = new Locale("vi", "VN");
             NumberFormat vn = NumberFormat.getInstance(localeVN);
             installmentPlan.setDownPayment(installmentPlan.getDownPayment() + " (" + vn.format(downPaymentAmount) + "đ)");
@@ -155,7 +155,7 @@ public class ImplInstallmentService implements InstallmentService {
             // Calculate totalPayment after downPayment
             int totalPayment = laptopPrice + (int) totalInterest + 80000;
 
-            int monthlyInstallment = totalPayment / months;
+            int monthlyInstallment =(remainingLoanAmount + (int) totalInterest + 80000) / months;
 
             Locale localeVN = new Locale("vi", "VN");
             NumberFormat vn = NumberFormat.getInstance(localeVN);
